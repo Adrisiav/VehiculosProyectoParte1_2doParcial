@@ -22,26 +22,29 @@ sudo apt update
 sudo apt install python3-venv
 python3 -m venv venv
 source venv/bin/activate
+```
 
 2. Instalar dependencias
-
+```
 pip install --upgrade pip
 pip install -r requirements.txt
+```
 
 Uso
 1. Configuración del mapa y puntos
 
 Dentro del archivo principal (main.py o tu script), configura:
-
+```
 map_yaml_path = "Oschersleben_map.yaml"
 downsample_factor = 5
 
 x_start, y_start = 4.0, -0.8
 x_goal, y_goal   = 1.0, -0.5
-
+```
 2. Ejecutar pipeline Theta* + DWA
-
+```
 python3 main.py
+```
 
 Esto ejecutará:
 
